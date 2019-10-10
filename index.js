@@ -10,7 +10,7 @@ window.onload = function() {
   const MAX_Y_VEL     = -1;
   const MIN_SIZE      = 7;
   const MAX_SIZE      = 5;
-  const originPoint   = { x: 200, y: 300 };
+  const originPoint   = { x: 400, y: 400 };
   const colors        = ["#333333", "orange", "red", "#4466FF", "teal"];
   let isMouseDown     = false;
 
@@ -33,8 +33,8 @@ window.onload = function() {
     const _size = random(MIN_SIZE, MAX_SIZE);
 
     particles.push({
-      x: 200,
-      y: 300,
+      x: originPoint.x,
+      y: originPoint.y,
       origin: { x: originPoint.x, y: originPoint.y},
       size: _size,
       color: colors[ Math.round( random(0, colors.length) ) ],
